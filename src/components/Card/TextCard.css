@@ -1,0 +1,65 @@
+.textCard{
+    width: 100%;
+    height: fit-content;
+    padding: 5px 0;
+}
+
+.textCard__tasks{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    background-color: #c6c6c6;
+    border-radius: 10px;
+}
+
+.textCard__tasks-text{
+    flex: 1;
+}
+
+.todotask,
+.completedtask{
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.todotask{
+    background-color: #ebffeb;
+    border-radius: 10px 0 0 10px;
+}
+
+.completedtask{
+    background-color: #ffcfcf;
+}
+
+.textCard__tasks-moveicon,
+.textCard__tasks-deleteicon{
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    font-size: 1.4rem;
+    
+}
+
+.textCard__tasks-moveicon{
+    color: rgb(0, 76, 255);
+}
+
+.textCard__tasks-moveicon:hover{
+    color: #fff;
+    background-color: rgb(0, 76, 255);
+}
+
+.textCard__tasks-deleteicon{
+    color: rgb(255, 61, 17);
+    margin: 0 5px;
+}
+
+.textCard__tasks-deleteicon:hover{
+    color: #fff;
+    background-color: rgb(255, 61, 17);
+}

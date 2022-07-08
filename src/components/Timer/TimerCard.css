@@ -1,0 +1,31 @@
+.timercards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.timercard{
+    margin: 2rem auto;
+    background-color: rgba(225, 165, 255, 0.69);
+    width: 300px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .blur{
+    height: 25rem;
+    width: 30rem;
+    background: rgba(253,120,43,.69);
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    z-index: -9;
+} */

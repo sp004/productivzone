@@ -1,0 +1,41 @@
+/* .navbar__logo img{
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+} */
+
+.navbar__logo a{
+    color: white;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.signin button{
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 160, 160);
+}
+
+.signin button:hover{
+    background-color: rgb(255, 223, 223);
+}
+
+.signin span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar__logo a{
+        font-size: 14px;
+    }
+}

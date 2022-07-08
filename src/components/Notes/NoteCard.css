@@ -1,0 +1,30 @@
+.noteCard{
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid #877777;
+}
+
+.notecard__edit{
+    flex: 1;
+}
+
+.notecard__edit h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.notecard__edit p{
+    font-size: 18px;
+}
+
+.noteCard__delete-icon{
+    color: red;
+}
