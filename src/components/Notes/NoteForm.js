@@ -18,6 +18,9 @@ const NoteForm = () => {
 
   const saveHandler = (e) => {
     e.preventDefault();
+    if(category.trim().length === 0 || notes.trim().length === 0){
+      return
+    }
     if (editNoteCard) {
       editNoteCardHandler(editNoteCard.id, category, notes);
     } else {
