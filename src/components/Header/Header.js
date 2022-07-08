@@ -7,7 +7,7 @@ const Header = () => {
     <div className='header'>
         <div className="header__text">
             <h1>One-Stop Productivity Application</h1>
-            <p>Boost your daily productivity with todo cards, note taker and pomodoro timer with this light-weight all-in-one application.</p>
+            <p>Boost your daily productivity with todo cards, note taker and pomodoro timer in this light-weighted all-in-one application.</p>
         </div>
         <img src={image} alt="header" />
     </div>

@@ -7,7 +7,6 @@ import './Pomodoro.css'
 
 const Pomodoro = () => {
   const {changeMode, displayMessage} = useContext(pomoContext)
-  console.log(changeMode, displayMessage)
 
   return (
     <div>

@@ -52,19 +52,35 @@ a{
     color: gold;
 }
 
+.timer__controls,
 .timer__actions{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.timer__actions button{
+.timer__controls button{
+    cursor: pointer;
+    color: rgba(225, 165, 255, 0.69);
     font-size: 2rem;
     outline: none;
     border: none;
-    cursor: pointer;
     text-align: center;
     background-color: transparent;
+}
+
+.timer__controls-settings{
+    cursor: pointer;
+    color: rgba(225, 165, 255, 0.69);
+    font-size: 2rem;
+}
+
+.timer__actions{
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1092px) {
