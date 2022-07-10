@@ -36,7 +36,7 @@ const NoteContextProvider = (props) => {
     // }
 
     return(
-        <noteContext.Provider value={{cardItems, editNoteCard, findCategory, addNoteCardHandler, editNoteCardHandler, deleteNoteCardHandler, setIsModalOpen, isModalOpen}}>
+        <noteContext.Provider value={{cardItems, editNoteCard, setEditNoteCard, findCategory, addNoteCardHandler, editNoteCardHandler, deleteNoteCardHandler, setIsModalOpen, isModalOpen}}>
             {props.children}
         </noteContext.Provider>
     )

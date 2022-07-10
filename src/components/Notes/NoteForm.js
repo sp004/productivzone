@@ -1,18 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./NoteForm.css";
-
+import {FiPlusCircle} from 'react-icons/fi'
 import ReactModal from "react-modal";
 import { noteContext } from "../../contexts/note-context";
 ReactModal.setAppElement("#root");
 
 const NoteForm = () => {
-  const {
-    addNoteCardHandler,
-    editNoteCardHandler,
-    editNoteCard,
-    isModalOpen,
-    setIsModalOpen,
-  } = useContext(noteContext);
+  const { addNoteCardHandler, editNoteCardHandler, editNoteCard, isModalOpen, setIsModalOpen, setEditNoteCard} = useContext(noteContext);
+
   const [category, setCategory] = useState("");
   const [notes, setNotes] = useState("");
 
@@ -30,15 +25,18 @@ const NoteForm = () => {
         notes,
       });
     }
-    setCategory("");
-    setNotes("");
-    setIsModalOpen(false);
+    setIsModalOpen(false)
   };
+
+  const onOpenHandler = () => {
+    setCategory('')
+    setNotes('')
+    setIsModalOpen(true)
+    setEditNoteCard(null)
+  }
 
   const onCloseHandler = () => {
     setIsModalOpen(false)
-    setCategory("");
-      setNotes("");
   }
 
   useEffect(() => {
@@ -51,11 +49,9 @@ const NoteForm = () => {
     }
   }, [editNoteCard]);
 
-  console.log(editNoteCard)
-  console.log(category, notes)
-
   return (
     <div>
+      <FiPlusCircle className='draft__plusicon' onClick={onOpenHandler} />
       <ReactModal
         isOpen={isModalOpen}
         shouldCloseOnOverlayClick={false}
@@ -64,7 +60,6 @@ const NoteForm = () => {
         <div className="form__modal">
           <form onSubmit={saveHandler}>
             <div className="form__input">
-              {/* <label htmlFor="category">Enter Category</label> */}
               <input
                 type="text"
                 id="category"
